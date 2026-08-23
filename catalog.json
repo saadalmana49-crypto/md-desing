@@ -4,10 +4,11 @@
   "description": "A reference library of real product design systems, installed into AI coding agents.",
   "version": "1.0.0",
   "generated": "2026-08-23",
-  "count": 36,
+  "count": 54,
   "categories": [
     "AI",
     "Commerce",
+    "Consumer",
     "Design",
     "Dev Tools",
     "Fintech",
@@ -21,6 +22,251 @@
     "light"
   ],
   "systems": [
+    {
+      "slug": "adyen",
+      "name": "Adyen",
+      "url": "https://www.adyen.com",
+      "category": "Fintech",
+      "mode": "dual",
+      "fonts": [
+        "Adyen",
+        "AdyenMono"
+      ],
+      "preview": {
+        "bg": "#ffffff",
+        "fg": "#001222",
+        "accent": "#00d16a"
+      },
+      "summary": "Deep navy ink on white with a signal-green primary, a paired dark theme, and a custom Adyen/AdyenMono pairing.",
+      "coverage": "full",
+      "file": "skills/narvo/references/adyen.md",
+      "bytes": 32353,
+      "sections": [
+        "Visual Theme & Atmosphere",
+        "Color Palette & Roles",
+        "Typography Rules",
+        "Component Stylings",
+        "Layout Principles",
+        "Depth & Elevation",
+        "Do's and Don'ts",
+        "Responsive Behavior",
+        "Agent Prompt Guide"
+      ],
+      "tokens": {
+        "colors": {
+          "primary": "#00d16a",
+          "primary-hover": "#00b15a",
+          "primary-active": "#2c6415",
+          "background": "#ffffff",
+          "surface": "#f4f5f6",
+          "surface-alt": "#e6e4e2",
+          "dark-background": "#001222",
+          "dark-surface": "#0d1e2e",
+          "text-primary": "#001222",
+          "text-inverse": "#ffffff",
+          "text-muted": "#6c7782",
+          "text-muted-dark": "#8c959d",
+          "border": "#d1d5d8",
+          "link-hover": "#3860be",
+          "link-focus": "#2285f7",
+          "focus-ring": "#000000"
+        },
+        "typography": {
+          "display": {
+            "family": "Adyen",
+            "size": "80px",
+            "weight": "700",
+            "line-height": "1.2"
+          },
+          "h1": {
+            "family": "Adyen",
+            "size": "32px",
+            "weight": "700",
+            "line-height": "1.2"
+          },
+          "h2": {
+            "family": "Adyen",
+            "size": "24px",
+            "weight": "700",
+            "line-height": "1.2"
+          },
+          "h3": {
+            "family": "Adyen",
+            "size": "20px",
+            "weight": "400",
+            "line-height": "1.5"
+          },
+          "body": {
+            "family": "Adyen",
+            "size": "17px",
+            "weight": "400",
+            "line-height": "1.5"
+          },
+          "caption": {
+            "family": "Adyen",
+            "size": "12px",
+            "weight": "400",
+            "line-height": "1.5"
+          },
+          "code": {
+            "family": "AdyenMono",
+            "size": "12px",
+            "weight": "400",
+            "line-height": "1.5"
+          }
+        },
+        "spacing": {
+          "base": "4px",
+          "scale": "[0, 4, 8, 12, 16, 24, 32, 48, 64, 96, 128]"
+        },
+        "radius": {
+          "sm": "5px",
+          "md": "6px"
+        },
+        "elevation": {
+          "z-index-default": "1",
+          "z-index-button": "2",
+          "z-index-dropdown": "3",
+          "z-index-tooltip": "5",
+          "z-index-header": "10",
+          "z-index-overlay": "100",
+          "z-index-modal": "200",
+          "z-index-loading": "999999"
+        },
+        "components": {
+          "button-primary": {
+            "bg": "{colors.primary}",
+            "text": "{colors.text-inverse}",
+            "radius": "{radius.md}",
+            "padding": "12px 24px"
+          },
+          "card": {
+            "bg": "{colors.background}",
+            "radius": "{radius.md}"
+          }
+        },
+        "motion": {
+          "duration-fast": "100ms",
+          "duration-base": "var(--motion-default-duration, 0.6s)",
+          "duration-medium": "300ms",
+          "easing-standard": "var(--motion-default-ease, cubic-bezier(0.19, 1, 0.22, 1))",
+          "easing-ease-in": "ease-in",
+          "easing-ease-out": "ease-out"
+        },
+        "layout": {
+          "breakpoints": {
+            "mobile-small": "425px",
+            "mobile-large": "500px",
+            "tablet-portrait": "530px",
+            "tablet-landscape": "600px",
+            "tablet": "896px",
+            "desktop": "1280px"
+          }
+        }
+      }
+    },
+    {
+      "slug": "amazon",
+      "name": "Amazon",
+      "url": "https://www.amazon.com",
+      "category": "Commerce",
+      "mode": "light",
+      "fonts": [
+        "Arial"
+      ],
+      "preview": {
+        "bg": "#ffffff",
+        "fg": "#333333",
+        "accent": "#f0c14b"
+      },
+      "summary": "The retail workhorse: Arial throughout, squircle gold CTAs, dense information over ornament.",
+      "coverage": "full",
+      "file": "skills/narvo/references/amazon.md",
+      "bytes": 25049,
+      "sections": [
+        "Visual Theme & Atmosphere",
+        "Color Palette & Roles",
+        "Typography Rules",
+        "Component Stylings",
+        "Layout Principles",
+        "Depth & Elevation",
+        "Do's and Don'ts",
+        "Responsive Behavior",
+        "Agent Prompt Guide"
+      ],
+      "tokens": {
+        "colors": {
+          "primary": "#f0c14b",
+          "primary-hover": "#e47911",
+          "background": "#ffffff",
+          "background-offset": "#f6f6f6",
+          "text-primary": "#333333",
+          "text-secondary": "#4d4d4d",
+          "text-link": "#0066c0",
+          "text-link-hover": "#e47911",
+          "text-dark": "#111111",
+          "border-subtle": "#dddddd",
+          "border-info": "#bbd3de",
+          "focus-ring": "#e47911",
+          "button-active-bg": "#dce0e3"
+        },
+        "typography": {
+          "display": {
+            "family": "Arial",
+            "size": "17px",
+            "weight": "400",
+            "line-height": "1.5"
+          },
+          "body": {
+            "family": "Arial",
+            "size": "13px",
+            "weight": "400",
+            "line-height": "1.5"
+          },
+          "caption": {
+            "family": "Arial",
+            "size": "11px",
+            "weight": "400",
+            "line-height": "1.5"
+          }
+        },
+        "spacing": {
+          "base": "4px",
+          "scale": "[12, 20, 24, 40, 64]"
+        },
+        "radius": {
+          "sm": "3px",
+          "md": "4px"
+        },
+        "elevation": {
+          "button-inset": "rgba(255, 255, 255, 0.4) 0px 1px 0px 0px inset",
+          "button-active-inset": "rgba(0, 0, 0, 0.2) 0px 1px 3px inset",
+          "focus-ring-shadow": "rgba(228, 121, 17, 0.5) 0px 0px 3px"
+        },
+        "components": {
+          "button-primary": {
+            "bg": "{colors.primary}",
+            "text": "{colors.text-dark}",
+            "radius": "{radius.sm}",
+            "padding": "0px 10px 0px 11px",
+            "border": "1px solid {colors.text-dark}",
+            "shadow": "{elevation.button-inset}"
+          }
+        },
+        "motion": {
+          "duration-fast": "100ms",
+          "duration-base": "0.5s",
+          "easing-linear": "linear",
+          "easing-standard": "cubic-bezier(0.25, 1, 0.5, 1)"
+        },
+        "layout": {
+          "breakpoints": [
+            "minWidth: null",
+            "minWidth: 768"
+          ]
+        }
+      }
+    },
     {
       "slug": "apollo",
       "name": "Apollo",
@@ -324,6 +570,147 @@
           "duration-base": "0.3s",
           "duration-slow": "0.8s",
           "easing-standard": "cubic-bezier(0.455, 0.03, 0.515, 0.955)"
+        }
+      }
+    },
+    {
+      "slug": "attio",
+      "name": "Attio",
+      "url": "https://attio.com",
+      "category": "SaaS",
+      "mode": "light",
+      "fonts": [
+        "Inter",
+        "JetBrains Mono"
+      ],
+      "preview": {
+        "bg": "#ffffff",
+        "fg": "#1e1e21",
+        "accent": "#1e1e21"
+      },
+      "summary": "Near-monochrome CRM marketing — #1e1e21 on white, with pale #8fb8ff the only chromatic note.",
+      "coverage": "full",
+      "file": "skills/narvo/references/attio.md",
+      "bytes": 32146,
+      "sections": [
+        "Visual Theme & Atmosphere",
+        "Color Palette & Roles",
+        "Typography Rules",
+        "Component Stylings",
+        "Layout Principles",
+        "Depth & Elevation",
+        "Do's and Don'ts",
+        "Responsive Behavior",
+        "Agent Prompt Guide"
+      ],
+      "tokens": {
+        "colors": {
+          "primary": "#1E1E21",
+          "background": "#FFFFFF",
+          "text-primary": "#1E1E21",
+          "text-muted": "#818184",
+          "surface": "#FAFAFB",
+          "border": "#D4D4D6",
+          "primary-hover": "#424245",
+          "primary-active": "#424245",
+          "primary-focus": "#424245",
+          "primary-disabled-bg": "#FFFFFF",
+          "primary-button-text": "#FFFFFF",
+          "secondary-button-bg": "#FAFAFB",
+          "secondary-button-text": "#1E1E21",
+          "secondary-button-hover-bg": "#F0F0F2",
+          "secondary-button-active-bg": "#D4D4D6",
+          "secondary-button-disabled-bg": "#FFFFFF",
+          "secondary-button-disabled-text": "#D4D4D6",
+          "ghost-button-text": "#1E1E21",
+          "ghost-button-hover-text": "#424245",
+          "ghost-button-active-text": "#818184",
+          "ghost-button-focus-text": "#424245",
+          "ghost-button-disabled-text": "#D4D4D6",
+          "blue-accent": "#8FB8FF",
+          "blue-accent-light": "#B5C9FF",
+          "green-success": "#68D391",
+          "changelog-tag-blue": "#79C2FF",
+          "blue-hover-alpha": "#C8DCFFB2"
+        },
+        "typography": {
+          "display": {
+            "family": "Inter",
+            "size": "56px",
+            "weight": "600",
+            "line-height": "67.2px"
+          },
+          "heading-sm": {
+            "family": "Inter",
+            "size": "32px",
+            "weight": "600",
+            "line-height": "36px"
+          },
+          "h3": {
+            "family": "Inter",
+            "size": "20px",
+            "weight": "500",
+            "line-height": "30px"
+          },
+          "body": {
+            "family": "Inter",
+            "size": "16px",
+            "weight": "500",
+            "line-height": "24px"
+          },
+          "small": {
+            "family": "Inter",
+            "size": "14px",
+            "weight": "500",
+            "line-height": "21px"
+          },
+          "caption": {
+            "family": "Inter",
+            "size": "12px",
+            "weight": "500",
+            "line-height": "18px"
+          },
+          "code": {
+            "family": "JetBrains Mono",
+            "size": "14px",
+            "weight": "400",
+            "line-height": "21px"
+          }
+        },
+        "spacing": {
+          "base": "4px",
+          "scale": "[4, 8, 12, 16, 20, 24, 40, 48, 80, 128]"
+        },
+        "radius": {
+          "sm": "8px",
+          "md": "10px",
+          "lg": "12px",
+          "full": "50px"
+        },
+        "elevation": {
+          "card": "oklch(0 0 0 / 0.01) 0px 1px 2px 0px, oklch(0 0 0 / 0.02) 0px 2px 4px -1px, oklch(0 0 0 / 0.03) 0px 4px 8px -2px"
+        },
+        "motion": {
+          "duration-fast": "50ms",
+          "duration-base": "150ms",
+          "duration-medium": "300ms",
+          "easing-ease-out": "ease-out",
+          "easing-ease-in-out": "ease-in-out",
+          "easing-standard": "cubic-bezier(0.33, 0, 0, 1)",
+          "easing-decelerate": "cubic-bezier(0.45, 0, 0.2, 1)"
+        },
+        "components": {
+          "button-primary": {
+            "bg": "{colors.primary}",
+            "text": "{colors.primary-button-text}",
+            "radius": "{radius.md}",
+            "padding": "12px 24px"
+          },
+          "card": {
+            "bg": "{colors.background}",
+            "radius": "{radius.md}",
+            "shadow": "{elevation.card}"
+          }
         }
       }
     },
@@ -1849,6 +2236,164 @@
       }
     },
     {
+      "slug": "datadog",
+      "name": "Datadog",
+      "url": "https://www.datadoghq.com",
+      "category": "Infrastructure",
+      "mode": "dual",
+      "fonts": [
+        "NationalWeb"
+      ],
+      "preview": {
+        "bg": "#ffffff",
+        "fg": "#212529",
+        "accent": "#632ca6"
+      },
+      "summary": "Observability purple #632ca6 on white, NationalWeb throughout, with a paired dark surface set.",
+      "coverage": "partial",
+      "file": "skills/narvo/references/datadog.md",
+      "bytes": 26474,
+      "sections": [
+        "Visual Theme & Atmosphere",
+        "Color Palette & Roles",
+        "Typography Rules",
+        "Component Stylings",
+        "Layout Principles",
+        "Depth & Elevation",
+        "Known Gaps"
+      ],
+      "tokens": {
+        "colors": {
+          "primary": "#632ca6",
+          "primary-hover": "#BEAAFF",
+          "primary-dark": "#110617",
+          "background": "#ffffff",
+          "background-light": "#f6f6f6",
+          "background-subtle": "#eeeeee",
+          "background-dark": "#000000",
+          "text-primary": "#212529",
+          "text-secondary": "#555555",
+          "text-inverse": "#ffffff",
+          "text-dark": "#000000",
+          "border": "#e6e6e6",
+          "focus-ring": "rgba(13, 110, 253, 0.25)",
+          "dropdown-link": "#333333",
+          "dropdown-link-hover-bg": "#f5f5f5",
+          "dropdown-header": "#888888",
+          "dropdown-disabled": "#888888",
+          "disabled-text": "#C7C7C7",
+          "checked-bg": "#632ca6",
+          "gradient-start": "#8904FF",
+          "gradient-end": "#110617"
+        },
+        "typography": {
+          "display": {
+            "family": "NationalWeb",
+            "size": "68px",
+            "weight": "700",
+            "line-height": "1.2"
+          },
+          "heading-xl": {
+            "family": "NationalWeb",
+            "size": "48px",
+            "weight": "700",
+            "line-height": "1.2"
+          },
+          "heading-lg": {
+            "family": "NationalWeb",
+            "size": "36px",
+            "weight": "700",
+            "line-height": "1.2"
+          },
+          "heading-md": {
+            "family": "NationalWeb",
+            "size": "32px",
+            "weight": "700",
+            "line-height": "1.2"
+          },
+          "heading-sm": {
+            "family": "NationalWeb",
+            "size": "28px",
+            "weight": "700",
+            "line-height": "1.2"
+          },
+          "heading-xs": {
+            "family": "NationalWeb",
+            "size": "22px",
+            "weight": "300",
+            "line-height": "1.5"
+          },
+          "body": {
+            "family": "NationalWeb",
+            "size": "16px",
+            "weight": "400",
+            "line-height": "1.42857143"
+          },
+          "caption": {
+            "family": "NationalWeb",
+            "size": "12px",
+            "weight": "300",
+            "line-height": "1.5"
+          }
+        },
+        "spacing": {
+          "base": "4px",
+          "scale": "[0, 4, 8, 12, 16, 20, 24, 32, 40, 48, 64]"
+        },
+        "radius": {
+          "none": "0px",
+          "sm": "4px",
+          "md": "6px"
+        },
+        "elevation": {
+          "card": "0px 8px 10px 0px rgba(0, 0, 0, 0.07)",
+          "card-hover": "0px 0px 8px 8px rgba(0, 0, 0, 0.07)",
+          "dropdown": "0 0.5rem 1rem rgba(0, 0, 0, 0.15)"
+        },
+        "components": {
+          "button-primary": {
+            "bg": "{colors.primary}",
+            "text": "{colors.text-inverse}",
+            "radius": "{radius.none}",
+            "padding": "10px 12px",
+            "font-weight": "700",
+            "font-size": "22px"
+          },
+          "button-secondary": {
+            "bg": "transparent",
+            "text": "{colors.text-primary}",
+            "border": "1px solid {colors.text-primary}",
+            "radius": "{radius.none}",
+            "padding": "10px 12px",
+            "font-weight": "700",
+            "font-size": "22px"
+          },
+          "link": {
+            "color": "{colors.primary}",
+            "text-decoration": "none"
+          }
+        },
+        "motion": {
+          "duration-base": "0.2s",
+          "duration-fast": "0.15s",
+          "easing-standard": "ease",
+          "easing-in-out": "ease-in-out"
+        },
+        "layout": {
+          "max-width": "1400px",
+          "columns": "12",
+          "gutter": "24px",
+          "breakpoints": {
+            "sm": "576px",
+            "md": "768px",
+            "lg": "992px",
+            "xl": "1200px",
+            "xxl": "1400px"
+          }
+        }
+      }
+    },
+    {
       "slug": "dodo-payments",
       "name": "Dodo Payments",
       "url": "https://dodopayments.com",
@@ -2009,6 +2554,286 @@
           "easing-standard": "cubic-bezier(0.4, 0, 0.2, 1)",
           "easing-out": "cubic-bezier(0.215, 0.61, 0.355, 1)",
           "easing-spring": "cubic-bezier(0.34, 1.56, 0.64, 1)"
+        }
+      }
+    },
+    {
+      "slug": "dribbble",
+      "name": "Dribbble",
+      "url": "https://dribbble.com",
+      "category": "Design",
+      "mode": "dual",
+      "fonts": [
+        "Mona Sans"
+      ],
+      "preview": {
+        "bg": "#ffffff",
+        "fg": "#0d0c22",
+        "accent": "#ea4c89"
+      },
+      "summary": "Dribbble pink on near-black ink, Mona Sans from 52px display down to 12px, dense 24px-gutter card grid.",
+      "coverage": "full",
+      "file": "skills/narvo/references/dribbble.md",
+      "bytes": 29130,
+      "sections": [
+        "Visual Theme & Atmosphere",
+        "Color Palette & Roles",
+        "Typography Rules",
+        "Component Stylings",
+        "Layout Principles",
+        "Depth & Elevation",
+        "Do's and Don'ts",
+        "Responsive Behavior",
+        "Agent Prompt Guide"
+      ],
+      "tokens": {
+        "colors": {
+          "primary": "#ea4c89",
+          "primary-hover": "#d4447d",
+          "background": "#ffffff",
+          "surface": "#faf9fb",
+          "text-primary": "#0d0c22",
+          "text-secondary": "#524b63",
+          "text-muted": "#beb9ca",
+          "text-accent": "#060318",
+          "border": "#ecebf0",
+          "border-alt": "#e7e7e9",
+          "link-hover": "#3d3d4e",
+          "dark-surface": "#3a3546",
+          "dark-text": "#beb9ca",
+          "dark-text-primary": "#ffffff",
+          "dark-border": "#7b7194"
+        },
+        "typography": {
+          "display": {
+            "family": "Mona Sans",
+            "size": "52px",
+            "weight": "600",
+            "line-height": "1.2"
+          },
+          "heading-lg": {
+            "family": "Mona Sans",
+            "size": "18px",
+            "weight": "400",
+            "line-height": "1.5"
+          },
+          "heading-md": {
+            "family": "Mona Sans",
+            "size": "16px",
+            "weight": "400",
+            "line-height": "1.5"
+          },
+          "body": {
+            "family": "Mona Sans",
+            "size": "14px",
+            "weight": "400",
+            "line-height": "1.5"
+          },
+          "caption": {
+            "family": "Mona Sans",
+            "size": "12px",
+            "weight": "400",
+            "line-height": "1.5"
+          },
+          "code": {
+            "family": "Mona Sans",
+            "size": "13px",
+            "weight": "400",
+            "line-height": "1.5"
+          }
+        },
+        "spacing": {
+          "base": "4px",
+          "scale": "[4, 8, 12, 16, 20, 24, 32, 40, 48, 64]"
+        },
+        "radius": {
+          "sm": "2px",
+          "md": "4px",
+          "lg": "12px",
+          "pill": "50px",
+          "full": "9999px"
+        },
+        "elevation": {
+          "card": "0px 2px 4px 0px rgba(6, 3, 24, 0.1)",
+          "card-hover": "0px 3px 6px 0px rgba(0, 0, 0, 0.14)",
+          "cookie-banner": "0px -1px 10px 0px rgba(172, 171, 171, 0.3)"
+        },
+        "motion": {
+          "duration-fast": "0.15s",
+          "duration-base": "0.2s",
+          "easing-standard": "ease-in-out",
+          "easing-ease-out": "ease-out"
+        },
+        "layout": {
+          "breakpoints": {
+            "mobile-small": "375px",
+            "mobile-large": "767px",
+            "tablet": "959px",
+            "desktop": "1200px",
+            "desktop-large": "1440px"
+          }
+        }
+      }
+    },
+    {
+      "slug": "duolingo",
+      "name": "Duolingo",
+      "url": "https://www.duolingo.com",
+      "category": "Consumer",
+      "mode": "dual",
+      "fonts": [
+        "duolingo-sans"
+      ],
+      "preview": {
+        "bg": "#ffffff",
+        "fg": "#3c3c3c",
+        "accent": "#58ce00"
+      },
+      "summary": "Bright #58ce00 green, custom duolingo-sans at weight 700, and character illustration as a load-bearing element.",
+      "coverage": "partial",
+      "file": "skills/narvo/references/duolingo.md",
+      "bytes": 28942,
+      "sections": [
+        "Visual Theme & Atmosphere",
+        "Color Palette & Roles",
+        "Typography Rules",
+        "Component Stylings",
+        "Layout Principles",
+        "Depth & Elevation",
+        "Do's and Don'ts",
+        "Known Gaps"
+      ],
+      "tokens": {
+        "colors": {
+          "primary": "#58ce00",
+          "primary-dark": "#48af00",
+          "background": "#ffffff",
+          "surface": "#f7f7f7",
+          "text-primary": "#3c3c3c",
+          "text-secondary": "#afafaf",
+          "text-muted": "#777777",
+          "text-disabled": "#52656d",
+          "text-inverse": "#ffffff",
+          "border-light": "#e3e3e3",
+          "link-default": "#1453a3",
+          "link-footer": "#3c598d",
+          "focus-outline": "#00639b",
+          "dark-surface": "#19234b",
+          "gradient-purple-start": "#c962ff",
+          "gradient-purple-end": "#5f3cac",
+          "gradient-milestone-start": "#ff933a",
+          "gradient-diamond-start": "#a1a1ee",
+          "gradient-diamond-end": "#56dbe2",
+          "social-tiktok": "#000000",
+          "social-twitter": "#1da1f2"
+        },
+        "typography": {
+          "display": {
+            "family": "duolingo-sans, sans-serif",
+            "size": "40px",
+            "weight": "700",
+            "line-height": "1.2"
+          },
+          "heading-large": {
+            "family": "duolingo-sans, sans-serif",
+            "size": "32px",
+            "weight": "700",
+            "line-height": "1.25"
+          },
+          "heading-medium": {
+            "family": "duolingo-sans, sans-serif",
+            "size": "24px",
+            "weight": "700",
+            "line-height": "1.3"
+          },
+          "heading-small": {
+            "family": "duolingo-sans, sans-serif",
+            "size": "20px",
+            "weight": "700",
+            "line-height": "1.3"
+          },
+          "body": {
+            "family": "duolingo-sans, sans-serif",
+            "size": "17px",
+            "weight": "500",
+            "line-height": "1.5"
+          },
+          "caption": {
+            "family": "duolingo-sans, sans-serif",
+            "size": "16px",
+            "weight": "500",
+            "line-height": "1.5"
+          },
+          "small": {
+            "family": "duolingo-sans, sans-serif",
+            "size": "15px",
+            "weight": "700",
+            "line-height": "1.5"
+          }
+        },
+        "spacing": {
+          "base": "4px",
+          "scale": "[4, 8, 16, 24, 32, 48, 64, 80]"
+        },
+        "radius": {
+          "sm": "4px",
+          "md": "12px",
+          "lg": "24px",
+          "full": "9999px"
+        },
+        "elevation": {
+          "flat": "none",
+          "card": "0 1px 3px rgba(0,0,0,0.1)",
+          "overlay": "0 4px 12px rgba(0,0,0,0.15)",
+          "modal": "0 8px 24px rgba(0,0,0,0.2)"
+        },
+        "motion": {
+          "duration-fast": "0.1s",
+          "duration-base": "0.2s",
+          "duration-medium": "0.218s",
+          "duration-slow": "0.3s",
+          "duration-modal": "400ms",
+          "duration-lip": "0.15s",
+          "easing-linear": "linear",
+          "easing-ease-in": "ease-in",
+          "easing-standard": "cubic-bezier(0.4, 0, 0.2, 1)"
+        },
+        "components": {
+          "button-primary": {
+            "bg": "{colors.primary}",
+            "text": "{colors.text-inverse}",
+            "border": "{colors.primary-dark}",
+            "radius": "{radius.md}",
+            "padding": "0 16px",
+            "height": "50px"
+          },
+          "button-secondary": {
+            "bg": "{colors.background}",
+            "text": "{colors.text-disabled}",
+            "border": "{colors.border-light}",
+            "radius": "{radius.md}",
+            "padding": "0 16px",
+            "height": "50px"
+          },
+          "button-ghost": {
+            "bg": "transparent",
+            "text": "{colors.primary}",
+            "radius": "{radius.md}",
+            "padding": "0 11px",
+            "height": "48px"
+          },
+          "card": {
+            "bg": "{colors.background}",
+            "radius": "{radius.lg}",
+            "shadow": "{elevation.card}"
+          },
+          "input": {
+            "bg": "{colors.background}",
+            "border": "{colors.border-light}",
+            "radius": "{radius.sm}",
+            "padding": "12px 16px",
+            "text": "{colors.text-primary}"
+          }
         }
       }
     },
@@ -2980,6 +3805,435 @@
       }
     },
     {
+      "slug": "getdesign-md",
+      "name": "getdesign.md",
+      "url": "https://getdesign.md/",
+      "category": "Dev Tools",
+      "mode": "dark",
+      "fonts": [
+        "Geist",
+        "Geist Mono",
+        "GeistPixel-Circle"
+      ],
+      "preview": {
+        "bg": "#000000",
+        "fg": "#ededed",
+        "accent": "#ffb1ee"
+      },
+      "summary": "True-black canvas with a candy-pink accent and a pixel display cut alongside Geist.",
+      "coverage": "full",
+      "file": "skills/narvo/references/getdesign-md.md",
+      "bytes": 29456,
+      "sections": [
+        "Visual Theme & Atmosphere",
+        "Color Palette & Roles",
+        "Typography Rules",
+        "Component Stylings",
+        "Layout Principles",
+        "Depth & Elevation",
+        "Do's and Don'ts",
+        "Responsive Behavior",
+        "Agent Prompt Guide"
+      ],
+      "tokens": {
+        "colors": {
+          "primary": "#ffb1ee",
+          "primary-button-bg": "#f5a623",
+          "primary-button-text": "#1a1400",
+          "background": "#000000",
+          "background-dark": "#111111",
+          "background-dark-secondary": "#292929",
+          "text-primary": "#ededed",
+          "text-muted": "#a0a0a0",
+          "text-secondary-muted": "#878787",
+          "surface": "#111111",
+          "border": "#2e2e2e",
+          "everyfeed-accent": "#c7ff00",
+          "input-bg-hover": "rgba(255, 255, 255, 0.04)",
+          "input-focus-bg": "rgba(255, 177, 238, 0.04)",
+          "input-focus-shadow": "rgba(255, 177, 238, 0.12) 0px 0px 0px 3px"
+        },
+        "typography": {
+          "display": {
+            "family": "GeistPixel-Circle",
+            "size": "48px",
+            "weight": "400",
+            "line-height": "1.2"
+          },
+          "heading": {
+            "family": "Geist",
+            "size": "26px",
+            "weight": "400",
+            "line-height": "1.2"
+          },
+          "body": {
+            "family": "Geist",
+            "size": "16px",
+            "weight": "400",
+            "line-height": "1.5"
+          },
+          "caption": {
+            "family": "Geist",
+            "size": "12px",
+            "weight": "400",
+            "line-height": "1.5"
+          },
+          "code": {
+            "family": "Geist Mono",
+            "size": "12px",
+            "weight": "400",
+            "line-height": "1.5"
+          }
+        },
+        "spacing": {
+          "base": "4px",
+          "scale": "[4, 8, 12, 16, 24, 32, 40, 48, 64, 96]"
+        },
+        "radius": {
+          "sm": "4px",
+          "md": "6px",
+          "lg": "10px",
+          "full": "9999px"
+        },
+        "elevation": {
+          "card": "rgba(0, 0, 0, 0.16) 0px 10px 28px 0px",
+          "overlay": "rgba(0, 0, 0, 0.45) 0px -16px 48px 0px"
+        },
+        "motion": {
+          "duration-fast": "150ms",
+          "duration-base": "200ms",
+          "easing-standard": "ease-out"
+        },
+        "components": {
+          "button-primary": {
+            "bg": "{colors.primary-button-bg}",
+            "text": "{colors.primary-button-text}",
+            "radius": "{radius.sm}",
+            "padding": "10px 16px"
+          },
+          "button-secondary": {
+            "bg": "{colors.background-dark-secondary}",
+            "text": "{colors.text-primary}",
+            "border": "1px solid {colors.text-primary}",
+            "radius": "{radius.full}",
+            "padding": "10px 16px"
+          },
+          "button-ghost": {
+            "bg": "transparent",
+            "text": "{colors.text-muted}",
+            "border": "1px solid {colors.text-muted}",
+            "radius": "{radius.full}",
+            "padding": "6px 12px"
+          },
+          "card": {
+            "bg": "{colors.surface}",
+            "radius": "{radius.md}",
+            "shadow": "{elevation.card}"
+          },
+          "input": {
+            "bg": "{colors.background-dark}",
+            "text": "{colors.text-primary}",
+            "border": "1px solid {colors.border}",
+            "radius": "{radius.sm}"
+          }
+        }
+      }
+    },
+    {
+      "slug": "google",
+      "name": "Google",
+      "url": "https://google.com",
+      "category": "Consumer",
+      "mode": "light",
+      "fonts": [
+        "Google Sans",
+        "Arial"
+      ],
+      "preview": {
+        "bg": "#ffffff",
+        "fg": "#1f1f1f",
+        "accent": "#0b57d0"
+      },
+      "summary": "Google Sans over Arial, #0b57d0 for actions, #f8f9fa surfaces — restraint at planetary scale.",
+      "coverage": "full",
+      "file": "skills/narvo/references/google.md",
+      "bytes": 24395,
+      "sections": [
+        "Visual Theme & Atmosphere",
+        "Color Palette & Roles",
+        "Typography Rules",
+        "Component Stylings",
+        "Layout Principles",
+        "Depth & Elevation",
+        "Do's and Don'ts",
+        "Responsive Behavior",
+        "Agent Prompt Guide"
+      ],
+      "tokens": {
+        "colors": {
+          "primary": "#0b57d0",
+          "primary-light": "#e8f0fe",
+          "primary-text": "#ffffff",
+          "background": "#ffffff",
+          "surface": "#f8f9fa",
+          "surface-alt": "#f3f5f6",
+          "text-primary": "#1f1f1f",
+          "text-secondary": "#474747",
+          "text-muted": "#3c4043",
+          "text-subtle": "#636363",
+          "link": "#1a0dab",
+          "border": "#dadce0",
+          "border-light": "#d2d2d2",
+          "hover-neutral": "rgba(68, 71, 70, 0.08)",
+          "active-neutral": "rgba(109, 118, 124, 0.12)",
+          "focus-ring": "#0b57d0",
+          "overlay": "rgba(0, 0, 0, 0.6)"
+        },
+        "typography": {
+          "display": {
+            "family": "Google Sans",
+            "size": "28px",
+            "weight": "400",
+            "line-height": "1.2"
+          },
+          "body-lg": {
+            "family": "Arial",
+            "size": "16px",
+            "weight": "400",
+            "line-height": "1.5"
+          },
+          "body": {
+            "family": "Arial",
+            "size": "14px",
+            "weight": "400",
+            "line-height": "1.5"
+          },
+          "caption": {
+            "family": "Arial",
+            "size": "12px",
+            "weight": "400",
+            "line-height": "1.5"
+          }
+        },
+        "spacing": {
+          "base": "4px",
+          "scale": "[4, 8, 12, 16, 20, 24, 32, 64, 96]"
+        },
+        "radius": {
+          "sm": "8px",
+          "md": "24px",
+          "lg": "50px",
+          "full": "9999px"
+        },
+        "elevation": {
+          "card": "rgba(31, 31, 31, 0.08) 0px 3px 10px 0px",
+          "modal": "rgba(0, 0, 0, 0.2) 0px 2px 10px 0px"
+        },
+        "components": {
+          "button-primary": {
+            "bg": "{colors.primary}",
+            "text": "{colors.primary-text}",
+            "radius": "{radius.lg}",
+            "padding": "12px 24px"
+          },
+          "button-secondary": {
+            "bg": "{colors.surface}",
+            "text": "{colors.text-muted}",
+            "radius": "{radius.sm}",
+            "padding": "8px 16px"
+          },
+          "card": {
+            "bg": "{colors.background}",
+            "radius": "{radius.md}",
+            "shadow": "{elevation.modal}"
+          }
+        },
+        "motion": {
+          "duration-fast": "0.2s",
+          "duration-base": "0.4s",
+          "transition-opacity-fast": "opacity 0.2s",
+          "transition-opacity-base": "opacity 0.25s",
+          "animation-snackbar-hide": "g-snackbar-hide 0.4s",
+          "animation-snackbar-show": "g-snackbar-show 0.5s"
+        },
+        "layout": {
+          "breakpoints": {
+            "mobile-sm": "320px",
+            "mobile-lg": "479px",
+            "tablet": "569px"
+          }
+        }
+      }
+    },
+    {
+      "slug": "hermes-agent",
+      "name": "Hermes Agent",
+      "url": "https://hermes-agent.nousresearch.com/",
+      "category": "AI",
+      "mode": "dual",
+      "fonts": [
+        "displayFont",
+        "monoFont"
+      ],
+      "preview": {
+        "bg": "#0000f2",
+        "fg": "#f5f5f5",
+        "accent": "#edff45"
+      },
+      "summary": "Pure #0000f2 blue against paper white, serif display over mono, glitch-art and classical illustration.",
+      "coverage": "full",
+      "file": "skills/narvo/references/hermes-agent.md",
+      "bytes": 29411,
+      "sections": [
+        "Visual Theme & Atmosphere",
+        "Color Palette & Roles",
+        "Typography Rules",
+        "Component Stylings",
+        "Layout Principles",
+        "Depth & Elevation",
+        "Do's and Don'ts",
+        "Responsive Behavior *(Note: breakpoints below are industry-standard recommendations, not measurements from the source. Adjust to the brand's actual media queries when implementing.)*",
+        "Agent Prompt Guide"
+      ],
+      "tokens": {
+        "colors": {
+          "primary": "#0000f2",
+          "background": "#f5f5f5",
+          "text-primary": "#f5f5f5",
+          "text-secondary": "#000000",
+          "accent-yellow": "#edff45",
+          "surface-light": "#ffffff",
+          "border-light": "#f5f5f5",
+          "dropdown-hover": "#eceaf5"
+        },
+        "typography": {
+          "display": {
+            "family": "displayFont, ui-sans-serif, system-ui, sans-serif",
+            "size": "81px",
+            "weight": "800",
+            "line-height": "1.2"
+          },
+          "h1": {
+            "family": "displayFont, ui-sans-serif, system-ui, sans-serif",
+            "size": "39px",
+            "weight": "800",
+            "line-height": "1.2"
+          },
+          "h2": {
+            "family": "displayFont, ui-sans-serif, system-ui, sans-serif",
+            "size": "24px",
+            "weight": "800",
+            "line-height": "1.2"
+          },
+          "body": {
+            "family": "displayFont, ui-sans-serif, system-ui, sans-serif",
+            "size": "14px",
+            "weight": "400",
+            "line-height": "1.5"
+          },
+          "caption": {
+            "family": "displayFont, ui-sans-serif, system-ui, sans-serif",
+            "size": "11px",
+            "weight": "400",
+            "line-height": "1.5"
+          },
+          "code": {
+            "family": "monoFont, ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, \"Liberation Mono\", \"Courier New\", monospace",
+            "size": "14px",
+            "weight": "400",
+            "line-height": "1.5"
+          }
+        },
+        "spacing": {
+          "base": "4px",
+          "scale": "[4, 8, 12, 16, 20, 24, 32, 40, 48, 96, 128]"
+        },
+        "radius": {
+          "sm": "4px",
+          "none": "0px"
+        },
+        "elevation": {
+          "card": "rgba(0, 0, 0, 0.25) 0px 4px 14px 0px"
+        },
+        "motion": {
+          "duration-base": "0.15s",
+          "duration-arc": "0.2s",
+          "easing-standard": "cubic-bezier(0.4, 0, 0.2, 1)",
+          "easing-ease-out": "cubic-bezier(0, 0, 0.2, 1)",
+          "animation-arc-stroke": "2.23s"
+        },
+        "layout": {
+          "breakpoints": {
+            "sm": "767px",
+            "md": "768px"
+          }
+        },
+        "components": {
+          "button-primary": {
+            "bg": "{colors.background}",
+            "text": "{colors.primary}",
+            "border": "1px solid {colors.primary}",
+            "radius": "{radius.none}",
+            "padding": "8.57px 16px",
+            "font-weight": "800",
+            "font-size": "13.47px"
+          },
+          "button-secondary": {
+            "bg": "transparent",
+            "text": "{colors.text-primary}",
+            "border": "1px solid {colors.text-primary}",
+            "radius": "{radius.none}",
+            "padding": "8.57px 16px",
+            "font-weight": "800",
+            "font-size": "13.47px"
+          },
+          "button-ghost": {
+            "bg": "transparent",
+            "text": "{colors.text-primary}",
+            "border": "none",
+            "radius": "{radius.none}",
+            "padding": "0px 0px 7.35px 0px",
+            "font-weight": "400",
+            "font-size": "10.08px"
+          },
+          "card-feature": {
+            "bg": "{colors.primary}",
+            "text": "{colors.text-primary}",
+            "radius": "{radius.none}",
+            "padding": "48px"
+          },
+          "input-text": {
+            "bg": "{colors.surface-light}",
+            "text": "{colors.text-secondary}",
+            "border": "1px solid {colors.primary}",
+            "radius": "{radius.none}",
+            "padding": "12px 16px"
+          },
+          "nav-link": {
+            "color": "{colors.text-primary}",
+            "hover-color": "{colors.accent-yellow}",
+            "font-weight": "400",
+            "font-size": "14px"
+          },
+          "dropdown-menu": {
+            "bg": "{colors.surface-light}",
+            "text": "{colors.primary}",
+            "border": "2px solid {colors.primary}",
+            "radius": "{radius.none}",
+            "padding": "8px 12px"
+          },
+          "link-standard": {
+            "color": "{colors.primary}",
+            "text-decoration": "underline"
+          },
+          "link-secondary": {
+            "color": "{colors.text-primary}",
+            "text-decoration": "underline"
+          }
+        }
+      }
+    },
+    {
       "slug": "inkeep",
       "name": "Inkeep",
       "url": "https://inkeep.com",
@@ -3127,6 +4381,137 @@
             "bg": "{colors.background}",
             "radius": "{radius.md}",
             "shadow": "{elevation.card}"
+          }
+        }
+      }
+    },
+    {
+      "slug": "instagram",
+      "name": "Instagram",
+      "url": "https://www.instagram.com",
+      "category": "Consumer",
+      "mode": "light",
+      "fonts": [
+        "-apple-system"
+      ],
+      "preview": {
+        "bg": "#ffffff",
+        "fg": "#000000",
+        "accent": "#0064e0"
+      },
+      "summary": "System font, white canvas, #0064e0 actions and 16px radii — the chrome disappears behind the photos.",
+      "coverage": "full",
+      "file": "skills/narvo/references/instagram.md",
+      "bytes": 25641,
+      "sections": [
+        "Visual Theme & Atmosphere",
+        "Color Palette & Roles",
+        "Typography Rules",
+        "Component Stylings",
+        "Layout Principles",
+        "Depth & Elevation",
+        "Do's and Don'ts",
+        "Responsive Behavior",
+        "Agent Prompt Guide"
+      ],
+      "tokens": {
+        "colors": {
+          "primary": "#0064e0",
+          "primary-hover": "#0057c7",
+          "primary-active": "rgba(0, 100, 224, 0.7)",
+          "background": "#ffffff",
+          "background-muted": "#f2f4f6",
+          "text-primary": "#000000",
+          "text-secondary": "#737373",
+          "text-accent": "#4150f7",
+          "text-link": "#0064e0",
+          "border-default": "#d0d3d6",
+          "input-bg": "#f2f4f6",
+          "input-border-focus": "#0064e0",
+          "secondary-button-hover-bg": "rgba(0,0,0,0.05)",
+          "secondary-button-active-bg": "#4150f7"
+        },
+        "typography": {
+          "display": {
+            "family": "-apple-system",
+            "size": "40px",
+            "weight": "600",
+            "line-height": "1.2"
+          },
+          "heading-1": {
+            "family": "-apple-system",
+            "size": "26px",
+            "weight": "500",
+            "line-height": "1.2"
+          },
+          "body": {
+            "family": "-apple-system",
+            "size": "17px",
+            "weight": "400",
+            "line-height": "1.5"
+          },
+          "body-sm": {
+            "family": "-apple-system",
+            "size": "14px",
+            "weight": "400",
+            "line-height": "1.5"
+          },
+          "caption": {
+            "family": "-apple-system",
+            "size": "12px",
+            "weight": "400",
+            "line-height": "1.5"
+          }
+        },
+        "spacing": {
+          "base": "4px",
+          "scale": "[0, 4, 8, 12, 16, 20, 24, 40, 48, 128]"
+        },
+        "radius": {
+          "sm": "16px",
+          "md": "22px",
+          "lg": "40px"
+        },
+        "elevation": {
+          "card": "0 12px 28px 0 rgba(0, 0, 0, 0.2), 0 2px 4px 0 rgba(0, 0, 0, 0.1)",
+          "modal": "12"
+        },
+        "components": {
+          "button-primary": {
+            "bg": "{colors.primary}",
+            "text": "#ffffff",
+            "radius": "{radius.sm}",
+            "padding": "10px 16px"
+          },
+          "button-secondary": {
+            "bg": "{colors.background}",
+            "text": "{colors.primary}",
+            "border": "1px solid {colors.primary}",
+            "radius": "{radius.sm}",
+            "padding": "10px 16px"
+          },
+          "input": {
+            "bg": "{colors.input-bg}",
+            "text": "{colors.text-primary}",
+            "border": "1px solid {colors.border-default}",
+            "radius": "{radius.sm}",
+            "padding": "12px"
+          }
+        },
+        "motion": {
+          "duration-fast": "0.1s",
+          "duration-base": "0.2s",
+          "duration-medium": "0.3s",
+          "easing-standard": "ease-in-out",
+          "easing-decelerate": "ease-out"
+        },
+        "layout": {
+          "breakpoints": {
+            "mobile-small": "679px",
+            "mobile-large": "735px",
+            "tablet": "767px",
+            "desktop": "999px",
+            "desktop-large": "1025px"
           }
         }
       }
@@ -4082,6 +5467,129 @@
       }
     },
     {
+      "slug": "mistral",
+      "name": "Mistral AI",
+      "url": "https://mistral.ai",
+      "category": "AI",
+      "mode": "dual",
+      "fonts": [
+        "ALTMistral",
+        "Inter",
+        "Space Mono"
+      ],
+      "preview": {
+        "bg": "#fbfbf8",
+        "fg": "#000000",
+        "accent": "#ff5229"
+      },
+      "summary": "Warm off-white #fbfbf8 with a signal-orange accent; ALTMistral display, Space Mono labels, OKLCH text ramp.",
+      "coverage": "partial",
+      "file": "skills/narvo/references/mistral.md",
+      "bytes": 15444,
+      "sections": [
+        "Visual Theme & Atmosphere",
+        "Color Palette & Roles",
+        "Typography Rules",
+        "Component Stylings",
+        "Known Gaps"
+      ],
+      "tokens": {
+        "colors": {
+          "primary": "#ff5229",
+          "accent-orange": "#fa500f",
+          "background": "#fbfbf8",
+          "surface-light": "#f5f4ef",
+          "dark-surface": "#07070b",
+          "text-primary": "#000000",
+          "text-secondary": "oklch(27.4% .006 286.033)",
+          "text-tertiary": "oklch(37% .013 285.805)",
+          "dark-text": "#ffffff",
+          "border": "#e4e3de",
+          "focus-ring": "rgb(0, 124, 255)",
+          "surface-brand-secondary": "oklch(96.7% .001 286.375)"
+        },
+        "typography": {
+          "display": {
+            "family": "ALTMistral",
+            "size": "96px",
+            "weight": "700",
+            "line-height": "1.2"
+          },
+          "heading-h1": {
+            "family": "Inter",
+            "size": "32px",
+            "weight": "700",
+            "line-height": "1.2"
+          },
+          "body": {
+            "family": "Inter",
+            "size": "16px",
+            "weight": "400",
+            "line-height": "1.5"
+          },
+          "body-small": {
+            "family": "Inter",
+            "size": "14px",
+            "weight": "400",
+            "line-height": "1.5"
+          },
+          "code": {
+            "family": "Space Mono",
+            "size": "16px",
+            "weight": "400",
+            "line-height": "1.5"
+          }
+        },
+        "spacing": {
+          "base": "4px",
+          "scale": "[0, 4, 8, 12, 16, 40, 80]"
+        },
+        "radius": {
+          "sm": "6px"
+        },
+        "motion": {
+          "duration-fast": "50ms",
+          "duration-base": "300ms",
+          "easing-standard": "cubic-bezier(0.4, 0, 1, 1)",
+          "easing-in-out": "ease-in-out"
+        },
+        "components": {
+          "button-primary": {
+            "bg": "{colors.text-primary}",
+            "text": "{colors.dark-text}",
+            "radius": "{radius.sm}",
+            "padding": "12px 24px"
+          },
+          "button-secondary": {
+            "bg": "{colors.background}",
+            "text": "{colors.text-primary}",
+            "border": "{colors.border}",
+            "radius": "0px",
+            "padding": "16px 16px"
+          },
+          "card": {
+            "bg": "{colors.dark-surface}",
+            "text": "{colors.dark-text}",
+            "radius": "{radius.sm}",
+            "shadow": "none"
+          },
+          "input": {
+            "bg": "{colors.background}",
+            "text": "{colors.text-primary}",
+            "border": "{colors.border}",
+            "radius": "{radius.sm}",
+            "padding": "10px 12px"
+          },
+          "badge-category": {
+            "bg": "{colors.surface-brand-secondary}",
+            "text": "{colors.text-primary}",
+            "radius": "{radius.sm}",
+            "padding": "4px 8px"
+          }
+        }
+      }
+    },
+    {
       "slug": "modal",
       "name": "Modal",
       "url": "https://modal.com",
@@ -4300,6 +5808,249 @@
             "typography": "{typography.body-sm}",
             "rounded": "{rounded.none}",
             "padding": "10px 16px"
+          }
+        }
+      }
+    },
+    {
+      "slug": "netflix",
+      "name": "Netflix",
+      "url": "https://netflix.com",
+      "category": "Media",
+      "mode": "dark",
+      "fonts": [
+        "Netflix Sans"
+      ],
+      "preview": {
+        "bg": "#000000",
+        "fg": "#ffffff",
+        "accent": "#e50914"
+      },
+      "summary": "The red on black. Netflix Sans, alpha-stepped white text, and artwork carrying every bit of the color.",
+      "coverage": "full",
+      "file": "skills/narvo/references/netflix.md",
+      "bytes": 26496,
+      "sections": [
+        "Visual Theme & Atmosphere",
+        "Color Palette & Roles",
+        "Typography Rules",
+        "Component Stylings",
+        "Layout Principles",
+        "Depth & Elevation",
+        "Do's and Don'ts",
+        "Responsive Behavior",
+        "Agent Prompt Guide"
+      ],
+      "tokens": {
+        "colors": {
+          "primary": "#e50914",
+          "primary-hover": "#cc0711",
+          "background": "#000000",
+          "background-surface": "#232323",
+          "background-input": "#2d2d2d",
+          "background-header-footer": "#161616",
+          "text-primary": "#ffffff",
+          "text-muted": "rgba(255,255,255,0.7)",
+          "border-default": "rgba(128,128,128,0.7)",
+          "border-light": "#414141",
+          "focus-ring": "rgb(255,255,255)",
+          "disabled-text": "rgba(255,255,255,0.4)",
+          "disabled-bg": "rgba(229, 9, 20, 0.5)",
+          "link-cookie-banner-hover": "rgb(24, 131, 253)"
+        },
+        "typography": {
+          "display": {
+            "family": "Netflix Sans",
+            "size": "56px",
+            "weight": "700",
+            "line-height": "1.2"
+          },
+          "heading-2": {
+            "family": "Netflix Sans",
+            "size": "24px",
+            "weight": "700",
+            "line-height": "1.2"
+          },
+          "heading-3": {
+            "family": "Netflix Sans",
+            "size": "20px",
+            "weight": "400",
+            "line-height": "1.5"
+          },
+          "body": {
+            "family": "Netflix Sans",
+            "size": "16px",
+            "weight": "400",
+            "line-height": "1.5"
+          },
+          "caption": {
+            "family": "Netflix Sans",
+            "size": "14px",
+            "weight": "400",
+            "line-height": "1.5"
+          },
+          "small": {
+            "family": "Netflix Sans",
+            "size": "13px",
+            "weight": "400",
+            "line-height": "1.5"
+          }
+        },
+        "spacing": {
+          "base": "4px",
+          "scale": "[0, 4, 8, 12, 16, 20, 24, 32, 48, 96, 128]"
+        },
+        "radius": {
+          "sm": "2px",
+          "md": "4px",
+          "lg": "8px",
+          "full": "50px"
+        },
+        "elevation": {
+          "z-negative": "-1",
+          "z-base": "1",
+          "z-card": "2",
+          "z-dropdown": "3",
+          "z-button-overlay": "100",
+          "z-modal-backdrop": "1002",
+          "z-cookie-banner": "2147483645",
+          "z-cookie-overlay": "2147483646"
+        },
+        "components": {
+          "button-primary": {
+            "bg": "{colors.primary}",
+            "text": "{colors.text-primary}",
+            "radius": "{radius.md}",
+            "padding": "8px 16px"
+          },
+          "card": {
+            "bg": "{colors.background-surface}",
+            "radius": "{radius.lg}"
+          },
+          "input-text": {
+            "border": "{colors.border-default}",
+            "radius": "{radius.md}",
+            "padding": "16px 12px",
+            "foreground": "{colors.text-primary}",
+            "label-foreground": "{colors.text-muted}"
+          }
+        },
+        "motion": {
+          "duration-base": "250ms",
+          "duration-pressed": "0ms",
+          "easing-standard": "cubic-bezier(0.4,0,0.68,0.06)",
+          "easing-hover": "cubic-bezier(0.32,0.94,0.6,1)"
+        }
+      }
+    },
+    {
+      "slug": "nike",
+      "name": "Nike",
+      "url": "https://www.nike.sa",
+      "category": "Commerce",
+      "mode": "light",
+      "fonts": [
+        "HelveticaNeue"
+      ],
+      "preview": {
+        "bg": "#f5f5f5",
+        "fg": "#111111",
+        "accent": "#000000"
+      },
+      "summary": "Helvetica Neue, #f5f5f5 canvas, black CTAs and a lime accent — typography and product photography only.",
+      "coverage": "full",
+      "file": "skills/narvo/references/nike.md",
+      "bytes": 29299,
+      "sections": [
+        "Visual Theme & Atmosphere",
+        "Color Palette & Roles",
+        "Typography Rules",
+        "Component Stylings",
+        "Layout Principles",
+        "Depth & Elevation",
+        "Do's and Don'ts",
+        "Responsive Behavior",
+        "Agent Prompt Guide"
+      ],
+      "tokens": {
+        "colors": {
+          "primary": "#000000",
+          "background": "#f5f5f5",
+          "text-primary": "#111111",
+          "text-inverse": "#ffffff",
+          "text-muted": "#757575",
+          "surface": "#ffffff",
+          "border-subtle": "#e5e5e5",
+          "accent-lime": "#ccff00",
+          "accent-grey": "#cccccc",
+          "interactive-hover-text": "#111111",
+          "interactive-focus-outline": "#000000",
+          "interactive-active-bg": "#007bff",
+          "interactive-disabled-bg": "#b8b8b8",
+          "interactive-checkbox-checked": "#128a09"
+        },
+        "typography": {
+          "display": {
+            "family": "HelveticaNeue, Helvetica, Arial, sans-serif",
+            "size": "76px",
+            "weight": "700",
+            "line-height": "1.2"
+          },
+          "heading": {
+            "family": "HelveticaNeue, Helvetica, Arial, sans-serif",
+            "size": "24px",
+            "weight": "700",
+            "line-height": "1.2"
+          },
+          "body": {
+            "family": "HelveticaNeue, Helvetica, Arial, sans-serif",
+            "size": "16px",
+            "weight": "400",
+            "line-height": "1.5"
+          },
+          "caption": {
+            "family": "HelveticaNeue, Helvetica, Arial, sans-serif",
+            "size": "12px",
+            "weight": "400",
+            "line-height": "1.5"
+          }
+        },
+        "spacing": {
+          "base": "4px",
+          "scale": "[4, 8, 16, 20, 24, 40, 48]"
+        },
+        "radius": {
+          "sm": "20px",
+          "md": "36px",
+          "lg": "40px",
+          "full": "100px"
+        },
+        "elevation": {
+          "flat": "0px 0px 0px 0px rgb(0, 0, 0)"
+        },
+        "motion": {
+          "duration-fast": "0.2s",
+          "duration-base": "0.4s",
+          "easing-standard": "ease-in-out"
+        },
+        "components": {
+          "button-primary": {
+            "bg": "{colors.primary}",
+            "text": "{colors.text-inverse}",
+            "radius": "{radius.lg}",
+            "padding": "16px 24px"
+          },
+          "button-secondary": {
+            "bg": "{colors.surface}",
+            "text": "{colors.text-primary}",
+            "border": "{colors.primary}",
+            "radius": "{radius.lg}",
+            "padding": "16px 24px"
+          },
+          "card": {
+            "bg": "{colors.surface}",
+            "radius": "{radius.sm}",
+            "shadow": "{elevation.flat}"
           }
         }
       }
@@ -5163,6 +6914,163 @@
       }
     },
     {
+      "slug": "posthog",
+      "name": "PostHog",
+      "url": "https://posthog.com",
+      "category": "Dev Tools",
+      "mode": "light",
+      "fonts": [
+        "RoundHog",
+        "Source Code Pro"
+      ],
+      "preview": {
+        "bg": "#e5e7e0",
+        "fg": "#23251d",
+        "accent": "#cd8407"
+      },
+      "summary": "Warm putty #e5e7e0 canvas, rounded RoundHog display, ochre and blue accents, isometric 3D illustration.",
+      "coverage": "full",
+      "file": "skills/narvo/references/posthog.md",
+      "bytes": 31096,
+      "sections": [
+        "Visual Theme & Atmosphere",
+        "Color Palette & Roles",
+        "Typography Rules",
+        "Component Stylings",
+        "Layout Principles",
+        "Depth & Elevation",
+        "Do's and Don'ts",
+        "Responsive Behavior",
+        "Agent Prompt Guide"
+      ],
+      "tokens": {
+        "colors": {
+          "primary": "#cd8407",
+          "primary-hover": "#eb9d2a",
+          "primary-border": "#b17816",
+          "accent-blue": "#2f80fa",
+          "accent-purple": "#b62ad9",
+          "accent-green": "#6aa84f",
+          "background": "#e5e7e0",
+          "surface": "#fdfdf8",
+          "surface-alt": "#eeefe9",
+          "text-primary": "#23251d",
+          "text-heading": "#111111",
+          "text-body": "#374151",
+          "text-muted": "#65675e",
+          "text-inverse": "#ffffff",
+          "border": "#e5e7e0",
+          "success": "#36c46f",
+          "danger": "#f54e00"
+        },
+        "typography": {
+          "display": {
+            "family": "RoundHog",
+            "size": "36px",
+            "weight": "600",
+            "line-height": "1.2"
+          },
+          "heading-xl": {
+            "family": "RoundHog",
+            "size": "36px",
+            "weight": "600",
+            "line-height": "1.2"
+          },
+          "heading-lg": {
+            "family": "RoundHog",
+            "size": "24px",
+            "weight": "600",
+            "line-height": "1.2"
+          },
+          "body-lg": {
+            "family": "RoundHog",
+            "size": "18px",
+            "weight": "500",
+            "line-height": "1.5"
+          },
+          "body": {
+            "family": "RoundHog",
+            "size": "16px",
+            "weight": "500",
+            "line-height": "1.5"
+          },
+          "body-sm": {
+            "family": "RoundHog",
+            "size": "15px",
+            "weight": "500",
+            "line-height": "1.5"
+          },
+          "caption": {
+            "family": "RoundHog",
+            "size": "13px",
+            "weight": "500",
+            "line-height": "1.5"
+          },
+          "code": {
+            "family": "Source Code Pro, ui-monospace, monospace",
+            "size": "13px",
+            "weight": "400",
+            "line-height": "1.5"
+          }
+        },
+        "spacing": {
+          "base": "4px",
+          "scale": "[0, 4, 8, 12, 16, 20, 24, 32, 48, 64, 80]"
+        },
+        "radius": {
+          "sm": "2px",
+          "md": "4px",
+          "lg": "6px",
+          "xl": "8px",
+          "full": "9999px"
+        },
+        "elevation": {
+          "card": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.1) 0px 2px 4px -2px",
+          "modal": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.25) 0px 25px 50px -12px"
+        },
+        "components": {
+          "button-primary": {
+            "bg": "{colors.primary}",
+            "text": "{colors.text-primary}",
+            "border": "{colors.primary-border}",
+            "radius": "{radius.lg}",
+            "padding": "12px 24px"
+          },
+          "button-secondary": {
+            "bg": "transparent",
+            "text": "{colors.text-primary}",
+            "border": "{colors.text-primary}",
+            "radius": "{radius.md}",
+            "padding": "2px 8px"
+          },
+          "button-ghost": {
+            "bg": "transparent",
+            "text": "{colors.text-primary}",
+            "border": "none",
+            "radius": "{radius.md}",
+            "padding": "2px 8px"
+          },
+          "card": {
+            "bg": "{colors.surface}",
+            "radius": "{radius.xl}",
+            "shadow": "{elevation.card}"
+          },
+          "input-text": {
+            "bg": "{colors.text-inverse}",
+            "text": "{colors.text-body}",
+            "border": "{colors.border}",
+            "radius": "{radius.md}",
+            "padding": "10px 12px"
+          }
+        },
+        "motion": {
+          "duration-base": "0.2s",
+          "easing-standard": "ease-out",
+          "easing-decelerate": "cubic-bezier(0.25, 1, 0.5, 1)"
+        }
+      }
+    },
+    {
       "slug": "resend",
       "name": "Resend",
       "url": "https://resend.com",
@@ -5776,6 +7684,316 @@
             "backgroundColor": "{colors.footer}",
             "textColor": "{colors.stone}",
             "typography": "{typography.eyebrow}"
+          }
+        }
+      }
+    },
+    {
+      "slug": "samsung",
+      "name": "Samsung",
+      "url": "https://www.samsung.com",
+      "category": "Commerce",
+      "mode": "light",
+      "fonts": [
+        "SamsungOne"
+      ],
+      "preview": {
+        "bg": "#ffffff",
+        "fg": "#000000",
+        "accent": "#006bea"
+      },
+      "summary": "SamsungOne exclusively, pure black on white, #006bea for every action — maximum contrast, minimum palette.",
+      "coverage": "full",
+      "file": "skills/narvo/references/samsung.md",
+      "bytes": 28993,
+      "sections": [
+        "Visual Theme & Atmosphere",
+        "Color Palette & Roles",
+        "Typography Rules",
+        "Component Stylings",
+        "Layout Principles",
+        "Depth & Elevation",
+        "Do's and Don'ts",
+        "Responsive Behavior",
+        "Agent Prompt Guide"
+      ],
+      "tokens": {
+        "colors": {
+          "primary": "#006bea",
+          "primary-hover": "#1428a0",
+          "background": "#ffffff",
+          "surface": "#ffffff",
+          "surface-light": "#f7f7f7",
+          "surface-hover": "#eeeeee",
+          "text-primary": "#000000",
+          "text-muted": "#757575",
+          "text-disabled": "#dddddd",
+          "link": "#0000ee",
+          "interactive-active": "#575e68"
+        },
+        "typography": {
+          "display": {
+            "family": "SamsungOne",
+            "size": "48px",
+            "weight": "700",
+            "line-height": "1.1"
+          },
+          "heading": {
+            "family": "SamsungOne",
+            "size": "32px",
+            "weight": "700",
+            "line-height": "1.2"
+          },
+          "body": {
+            "family": "SamsungOne",
+            "size": "16px",
+            "weight": "400",
+            "line-height": "1.5"
+          },
+          "caption": {
+            "family": "SamsungOne",
+            "size": "12px",
+            "weight": "400",
+            "line-height": "1.5"
+          },
+          "code": {
+            "family": "monospace",
+            "size": "14px",
+            "weight": "400",
+            "line-height": "1.5"
+          }
+        },
+        "spacing": {
+          "base": "4px",
+          "scale": "[0, 4, 8, 12, 16, 32]"
+        },
+        "radius": {
+          "sm": "4px",
+          "md": "8px"
+        },
+        "elevation": {
+          "z-dimmer": "-1",
+          "z-menu-item": "1",
+          "z-cookie-consent": "9",
+          "z-hero-text": "10",
+          "z-screen-indicator": "600",
+          "z-consent-banner": "999",
+          "z-nav-bar": "2000",
+          "z-fab-button": "2500"
+        },
+        "motion": {
+          "duration-fast": "100ms",
+          "duration-base": "200ms",
+          "easing-standard": "cubic-bezier(0.4, 0, 0.2, 1)"
+        },
+        "components": {
+          "button-primary": {
+            "bg": "{colors.primary}",
+            "text": "#ffffff",
+            "radius": "{radius.sm}",
+            "padding": "12px 24px"
+          },
+          "button-secondary": {
+            "bg": "{colors.surface}",
+            "text": "{colors.text-primary}",
+            "border": "1px solid {colors.text-primary}",
+            "radius": "{radius.sm}",
+            "padding": "12px 24px"
+          },
+          "button-ghost": {
+            "bg": "transparent",
+            "text": "{colors.text-primary}",
+            "radius": "{radius.sm}",
+            "padding": "12px 24px"
+          },
+          "card": {
+            "bg": "{colors.surface}",
+            "radius": "{radius.md}",
+            "shadow": "none"
+          },
+          "input": {
+            "bg": "{colors.surface}",
+            "text": "{colors.text-primary}",
+            "border": "1px solid {colors.text-muted}",
+            "radius": "{radius.sm}",
+            "padding": "10px 12px"
+          },
+          "link-standard": {
+            "color": "{colors.link}",
+            "hover-color": "{colors.primary-hover}"
+          }
+        }
+      }
+    },
+    {
+      "slug": "shadcn-ui",
+      "name": "shadcn/ui",
+      "url": "https://ui.shadcn.com/",
+      "category": "Dev Tools",
+      "mode": "dual",
+      "fonts": [
+        "Geist",
+        "Geist Mono"
+      ],
+      "preview": {
+        "bg": "#ffffff",
+        "fg": "#000000",
+        "accent": "#000000"
+      },
+      "summary": "The component-library reference: a complete semantic token pair (background/foreground, card, muted, popover) for both themes.",
+      "coverage": "full",
+      "file": "skills/narvo/references/shadcn-ui.md",
+      "bytes": 30101,
+      "sections": [
+        "Visual Theme & Atmosphere",
+        "Color Palette & Roles",
+        "Typography Rules",
+        "Component Stylings",
+        "Layout Principles",
+        "Depth & Elevation",
+        "Do's and Don'ts",
+        "Responsive Behavior",
+        "Agent Prompt Guide"
+      ],
+      "tokens": {
+        "colors": {
+          "primary": "#000000",
+          "primary-foreground": "#ffffff",
+          "background": "#ffffff",
+          "foreground": "#000000",
+          "surface": "#ffffff",
+          "text-primary": "#000000",
+          "text-muted": "#737373",
+          "border": "#e5e5e5",
+          "input": "#e5e5e5",
+          "muted": "#f5f5f5",
+          "accent": "#f5f5f5",
+          "accent-foreground": "#000000",
+          "popover": "#ffffff",
+          "popover-foreground": "#000000",
+          "sidebar": "#fafafa",
+          "sidebar-border": "#e5e5e5",
+          "sidebar-accent": "#f5f5f5",
+          "sidebar-accent-foreground": "#000000",
+          "dark-background": "#0a0a0a",
+          "dark-foreground": "#fafafa",
+          "dark-border": "#ffffff1a",
+          "dark-card": "#171717",
+          "dark-card-foreground": "#fafafa",
+          "dark-input": "#ffffff26",
+          "dark-muted": "#262626",
+          "dark-muted-foreground": "#a1a1a1",
+          "dark-popover": "#171717",
+          "dark-popover-foreground": "#fafafa",
+          "dark-accent": "#404040",
+          "dark-accent-foreground": "#fafafa"
+        },
+        "typography": {
+          "display": {
+            "family": "Geist",
+            "size": "48px",
+            "weight": "600",
+            "line-height": "1.2"
+          },
+          "h1": {
+            "family": "Geist",
+            "size": "36px",
+            "weight": "600",
+            "line-height": "1.2"
+          },
+          "h2": {
+            "family": "Geist",
+            "size": "30px",
+            "weight": "600",
+            "line-height": "1.2"
+          },
+          "h3": {
+            "family": "Geist",
+            "size": "24px",
+            "weight": "600",
+            "line-height": "1.2"
+          },
+          "body": {
+            "family": "Geist",
+            "size": "16px",
+            "weight": "400",
+            "line-height": "1.5"
+          },
+          "body-sm": {
+            "family": "Geist",
+            "size": "14px",
+            "weight": "400",
+            "line-height": "1.5"
+          },
+          "caption": {
+            "family": "Geist",
+            "size": "12px",
+            "weight": "400",
+            "line-height": "1.5"
+          },
+          "code": {
+            "family": "Geist Mono",
+            "size": "14px",
+            "weight": "400",
+            "line-height": "1.5"
+          }
+        },
+        "spacing": {
+          "base": "4px",
+          "scale": "[0, 4, 8, 12, 16, 20, 24, 48, 80]"
+        },
+        "radius": {
+          "sm": "6px",
+          "md": "8px",
+          "lg": "10px",
+          "xl": "18px",
+          "2xl": "20px",
+          "3xl": "24px",
+          "4xl": "26px"
+        },
+        "elevation": {
+          "card": "0px 1px 3px 0px rgba(0,0,0,0.1), 0px 1px 2px -1px rgba(0,0,0,0.1)",
+          "focus-ring": "0px 0px 0px 2px rgba(0, 0, 0, 0.2)",
+          "hover": "0px 1px 3px 0px rgba(0,0,0,0.1), 0px 1px 2px -1px rgba(0,0,0,0.1)"
+        },
+        "motion": {
+          "duration-fast": "100ms",
+          "duration-base": "200ms",
+          "duration-medium": "300ms",
+          "duration-slow": "400ms",
+          "duration-extra-slow": "500ms",
+          "easing-standard": "ease"
+        },
+        "components": {
+          "button-primary": {
+            "bg": "{colors.primary}",
+            "text": "{colors.primary-foreground}",
+            "radius": "{radius.xl}",
+            "padding": "12px 24px"
+          },
+          "button-secondary": {
+            "bg": "{colors.muted}",
+            "text": "{colors.foreground}",
+            "radius": "{radius.xl}",
+            "padding": "12px 24px"
+          },
+          "button-ghost": {
+            "bg": "transparent",
+            "text": "{colors.foreground}",
+            "radius": "{radius.xl}",
+            "padding": "12px 24px"
+          },
+          "card": {
+            "bg": "{colors.surface}",
+            "radius": "{radius.3xl}",
+            "shadow": "{elevation.card}"
+          },
+          "input": {
+            "bg": "{colors.background}",
+            "text": "{colors.foreground}",
+            "border": "1px solid {colors.input}",
+            "radius": "{radius.lg}",
+            "padding": "8px 12px"
           }
         }
       }
@@ -6526,6 +8744,138 @@
       }
     },
     {
+      "slug": "whatsapp",
+      "name": "WhatsApp",
+      "url": "https://www.whatsapp.com",
+      "category": "Consumer",
+      "mode": "dual",
+      "fonts": [
+        "WhatsApp Sans Var"
+      ],
+      "preview": {
+        "bg": "#ffffff",
+        "fg": "#1c1e21",
+        "accent": "#25d366"
+      },
+      "summary": "That green, #25d366, over a white or near-black canvas with the variable WhatsApp Sans.",
+      "coverage": "full",
+      "file": "skills/narvo/references/whatsapp.md",
+      "bytes": 25141,
+      "sections": [
+        "Visual Theme & Atmosphere",
+        "Color Palette & Roles",
+        "Typography Rules",
+        "Component Stylings",
+        "Layout Principles",
+        "Depth & Elevation",
+        "Do's and Don'ts",
+        "Responsive Behavior",
+        "Agent Prompt Guide"
+      ],
+      "tokens": {
+        "colors": {
+          "primary": "#25d366",
+          "primary-hover": "#00803e",
+          "background": "#ffffff",
+          "background-alt": "#fcf5eb",
+          "background-dark": "#1c1e21",
+          "background-dark-alt": "#111b21",
+          "text-primary": "#1c1e21",
+          "text-inverse": "#ffffff",
+          "text-muted": "#5e5e5e",
+          "text-accent-blue": "#385898",
+          "text-accent-link": "#0373e9",
+          "border-light": "#e6ffda",
+          "border-disabled": "#cdd0d5",
+          "surface-disabled": "#f0f4f9"
+        },
+        "typography": {
+          "display": {
+            "family": "WhatsApp Sans Var",
+            "size": "60px",
+            "weight": "700",
+            "line-height": "1.2"
+          },
+          "heading-1": {
+            "family": "WhatsApp Sans Var",
+            "size": "32px",
+            "weight": "700",
+            "line-height": "1.2"
+          },
+          "body": {
+            "family": "WhatsApp Sans Var",
+            "size": "18px",
+            "weight": "400",
+            "line-height": "1.5"
+          },
+          "body-sm": {
+            "family": "WhatsApp Sans Var",
+            "size": "16px",
+            "weight": "400",
+            "line-height": "1.5"
+          },
+          "caption": {
+            "family": "WhatsApp Sans Var",
+            "size": "12px",
+            "weight": "400",
+            "line-height": "1.5"
+          }
+        },
+        "spacing": {
+          "base": "4px",
+          "scale": "[4, 8, 12, 16, 20, 24, 32, 40, 48, 64, 80]"
+        },
+        "radius": {
+          "sm": "25px",
+          "full": "50px"
+        },
+        "elevation": {
+          "z-1": "1",
+          "z-modal-backdrop": "999",
+          "z-header": "1000",
+          "z-modal": "9999",
+          "z-tooltip": "10000"
+        },
+        "motion": {
+          "duration-fast": "250ms",
+          "duration-base": "300ms",
+          "duration-medium": "500ms",
+          "duration-slow": "1s",
+          "easing-ease-in-out": "ease-in-out",
+          "easing-cubic-bezier-1": "cubic-bezier(0.42, 0, 0.58, 1)",
+          "easing-cubic-bezier-2": "cubic-bezier(0.66, 0, 0.34, 1)",
+          "easing-ease-out": "ease-out",
+          "easing-linear": "linear"
+        },
+        "components": {
+          "button-primary": {
+            "bg": "{colors.primary}",
+            "text": "{colors.text-inverse}",
+            "radius": "{radius.full}",
+            "padding": "16px 28px"
+          },
+          "button-secondary": {
+            "bg": "{colors.background}",
+            "text": "{colors.text-primary}",
+            "border": "1px solid {colors.text-primary}",
+            "radius": "{radius.full}",
+            "padding": "16px 28px"
+          },
+          "button-ghost": {
+            "bg": "transparent",
+            "text": "{colors.text-primary}",
+            "padding": "8px 12px"
+          },
+          "card": {
+            "bg": "{colors.background}",
+            "radius": "{radius.sm}",
+            "padding": "24px",
+            "shadow": "none"
+          }
+        }
+      }
+    },
+    {
       "slug": "wise",
       "name": "Wise",
       "url": "https://wise.com",
@@ -7045,6 +9395,162 @@
           "duration-medium": "0.3s",
           "easing-standard": "ease-out",
           "easing-transform": "cubic-bezier(0.25, 1, 0.5, 1)"
+        }
+      }
+    },
+    {
+      "slug": "zed",
+      "name": "Zed",
+      "url": "https://zed.dev",
+      "category": "Dev Tools",
+      "mode": "dual",
+      "fonts": [
+        "Writer",
+        "IBM Plex Serif",
+        "Zed Mono"
+      ],
+      "preview": {
+        "bg": "#ffffff",
+        "fg": "#242529",
+        "accent": "#5c78e2"
+      },
+      "summary": "An editor site that reads like a document — serif and mono pairing, periwinkle #5c78e2 accent, paired dark theme.",
+      "coverage": "full",
+      "file": "skills/narvo/references/zed.md",
+      "bytes": 32871,
+      "sections": [
+        "Visual Theme & Atmosphere",
+        "Color Palette & Roles",
+        "Typography Rules",
+        "Component Stylings",
+        "Layout Principles",
+        "Depth & Elevation",
+        "Do's and Don'ts",
+        "Responsive Behavior *(Suggested — not measured)*",
+        "Agent Prompt Guide"
+      ],
+      "tokens": {
+        "colors": {
+          "primary": "#5c78e2",
+          "primary-light": "#e2e2fa",
+          "primary-hover": "#4b67d0",
+          "background": "#ffffff",
+          "surface": "#fafafa",
+          "neutral-light": "#ebebec",
+          "border": "#dcdcdd",
+          "text-primary": "#242529",
+          "text-secondary": "#58585a",
+          "text-muted": "#b4b4bb",
+          "text-dark-secondary": "#4d4f52",
+          "text-link": "#3882b7",
+          "text-purple": "#a449ab",
+          "text-red": "#b92b46",
+          "text-orange": "#d3604f",
+          "text-green": "#649f57",
+          "text-gray": "#a2a3a7",
+          "error": "#ff5c57",
+          "warning": "#ffbb2e",
+          "dark-background": "#3b414dff",
+          "dark-text": "#d0d4da",
+          "dark-border": "#464b57ff"
+        },
+        "typography": {
+          "display": {
+            "family": "plexSerif",
+            "size": "48px",
+            "weight": "400",
+            "line-height": "1.2"
+          },
+          "heading-1": {
+            "family": "plexSerif",
+            "size": "48px",
+            "weight": "400",
+            "line-height": "1.2"
+          },
+          "heading-2": {
+            "family": "plexSerif",
+            "size": "32px",
+            "weight": "400",
+            "line-height": "1.2"
+          },
+          "heading-3": {
+            "family": "plexSerif",
+            "size": "24px",
+            "weight": "400",
+            "line-height": "1.2"
+          },
+          "body": {
+            "family": "writer",
+            "size": "16px",
+            "weight": "400",
+            "line-height": "1.2"
+          },
+          "caption": {
+            "family": "writer",
+            "size": "12px",
+            "weight": "400",
+            "line-height": "1.5"
+          },
+          "code": {
+            "family": "zedMono",
+            "size": "12px",
+            "weight": "400",
+            "line-height": "1.5"
+          }
+        },
+        "spacing": {
+          "base": "4px",
+          "scale": "[0, 4, 8, 12, 16, 20, 24, 32, 64]"
+        },
+        "radius": {
+          "sm": "2px",
+          "md": "4px",
+          "lg": "6px",
+          "full": "9999px"
+        },
+        "elevation": {
+          "button-primary": "rgb(5, 55, 148) 0px -2px 0px 0px inset, rgb(230, 239, 254) 0px 1px 3px 0px",
+          "card-hover": "rgba(7, 77, 207, 0.04) 6px 6px 0px 0px",
+          "inset-border-blue": "rgba(102, 139, 204, 0.1) 0px -2px 0px 0px inset",
+          "inset-border-gray": "rgba(111, 123, 144, 0.1) 0px -2px 0px 0px inset",
+          "modal": "oklab(0.642147 -0.00263254 -0.0210819 / 0.5) 0px 20px 25px -5px, oklab(0.642147 -0.00263254 -0.0210819 / 0.5) 0px 8px 10px -6px"
+        },
+        "motion": {
+          "duration-fast": "80ms",
+          "duration-normal": "150ms",
+          "duration-slow": "200ms",
+          "easing-standard": "cubic-bezier(0.4, 0, 0.2, 1)",
+          "easing-in-out": "cubic-bezier(0.645, 0.045, 0.355, 1)",
+          "easing-out": "cubic-bezier(0.215, 0.61, 0.355, 1)",
+          "easing-spring": "cubic-bezier(0.34, 1.56, 0.64, 1)"
+        },
+        "components": {
+          "button-primary": {
+            "bg": "{colors.primary}",
+            "text": "{colors.background}",
+            "radius": "{radius.md}",
+            "padding": "8px 16px"
+          },
+          "button-secondary": {
+            "bg": "{colors.background}",
+            "text": "{colors.text-primary}",
+            "border": "1px solid {colors.border}",
+            "radius": "{radius.md}",
+            "padding": "8px 16px"
+          },
+          "card": {
+            "bg": "{colors.surface}",
+            "text": "{colors.text-primary}",
+            "radius": "{radius.md}",
+            "shadow": "{elevation.card-hover}"
+          },
+          "input": {
+            "bg": "{colors.background}",
+            "text": "{colors.text-primary}",
+            "border": "1px solid {colors.border}",
+            "radius": "{radius.sm}",
+            "padding": "8px 12px"
+          }
         }
       }
     }

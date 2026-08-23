@@ -146,3 +146,33 @@ const catalog = {
 
 writeFileSync(join(ROOT, "catalog.json"), JSON.stringify(catalog, null, 2) + "\n");
 console.log(`catalog.json — ${systems.length} systems, ${catalog.categories.length} categories`);
+
+/* ---------- keep the docs tables in sync ------------------------------ */
+
+const indexTable = [
+  "| Slug | System | Category | Mode | Notes |",
+  "|---|---|---|---|---|",
+  ...systems.map((s) =>
+    `| \`${s.slug}\` | ${s.name} | ${s.category} | ${s.mode}` +
+    `${s.coverage === "partial" ? " · *partial*" : ""} | ${s.summary} |`),
+].join("\n");
+
+function syncDoc(relPath) {
+  const abs = join(ROOT, relPath);
+  let text = readFileSync(abs, "utf8");
+  const before = text;
+  text = text.replace(
+    /<!-- BEGIN:index -->[\s\S]*?<!-- END:index -->/,
+    `<!-- BEGIN:index -->\n${indexTable}\n<!-- END:index -->`);
+  text = text.replace(/<!--COUNT-->.*?<!--\/COUNT-->/g,
+    `<!--COUNT-->${systems.length}<!--/COUNT-->`);
+  const nColors = systems.reduce((n, s) => n + Object.keys(s.tokens.colors || {}).length, 0);
+  text = text.replace(/<!--COLORS-->.*?<!--\/COLORS-->/g, `<!--COLORS-->${nColors}<!--/COLORS-->`);
+  if (text !== before) {
+    writeFileSync(abs, text);
+    console.log(`  synced ${relPath}`);
+  }
+}
+
+syncDoc("skills/narvo/SKILL.md");
+syncDoc("README.md");
