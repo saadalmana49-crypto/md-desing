@@ -1,0 +1,6 @@
+# Cloudflare Pages — static deploy of the repository root.
+#   npx wrangler pages project create narvo     # once
+#   npx wrangler pages deploy .                 # each release
+name = "narvo"
+pages_build_output_dir = "."
+compatibility_date = "2026-08-01"

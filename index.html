@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Narvo — real design systems for AI coding agents</title>
+<meta name="description" content="A reference library of 36 design systems documented from real product websites — measured colors, type scales, spacing, and components. Install it into Claude Code, Cursor, Codex, and other coding agents.">
+<meta name="theme-color" content="#0b1014">
+<link rel="canonical" href="/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Narvo — real design systems for AI coding agents">
+<meta property="og:description" content="36 design systems documented from real product websites. Install into Claude Code, Cursor, Codex, and more.">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%230b1014'/%3E%3Cpath d='M9 23V9l14 14V9' stroke='%232c63ff' stroke-width='3' fill='none' stroke-linecap='square'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+
+<header class="nav">
+  <div class="wrap nav-inner">
+    <a class="brand" href="#top">
+      <span class="brand-mark">narvo</span>
+      <span class="brand-count" id="brandCount">36 systems</span>
+    </a>
+    <nav class="nav-links">
+      <a class="nav-link" href="#install">Install</a>
+      <a class="nav-link" href="#systems">Systems</a>
+      <a class="nav-link" href="#agents">Agents</a>
+      <a class="nav-link" data-repo-href="" href="#">GitHub</a>
+    </nav>
+    <a class="btn btn-primary btn-sm" href="#install">Install the skill</a>
+  </div>
+</header>
+
+<main id="top">
+
+  <section class="hero">
+    <div class="wrap">
+      <span class="eyebrow">Agent skill · <span id="eyebrowCount">36</span> design systems</span>
+      <h1>Your agent already writes the code. Teach it <em>what to make it look like.</em></h1>
+      <p class="hero-sub">
+        Narvo is a reference library of design systems documented from real product websites —
+        measured hex values, type scales, radii, shadow stacks, component CSS, breakpoints.
+        Install it once and your coding agent can build in a specific visual language
+        instead of inventing another grey card with a purple gradient.
+      </p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="#install">Install the skill</a>
+        <a class="btn btn-secondary" href="#systems">Browse the library</a>
+      </div>
+      <div class="hero-stats">
+        <div><span class="stat-n" id="statSystems">36</span><span class="stat-l">design systems</span></div>
+        <div><span class="stat-n" id="statColors">—</span><span class="stat-l">documented colors</span></div>
+        <div><span class="stat-n" id="statCats">8</span><span class="stat-l">categories</span></div>
+        <div><span class="stat-n">0</span><span class="stat-l">runtime dependencies</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="install">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2>Install</h2>
+        <p>Narvo is plain Markdown in a folder. Every agent below reads skills from a directory —
+           the install is a <code>git clone</code> into the right place. Pick your agent.</p>
+      </div>
+      <div class="tabs" role="tablist" aria-label="Coding agents" id="agentTabs"></div>
+      <div id="agentPanel"></div>
+    </div>
+  </section>
+
+  <section class="section" id="systems">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2>The library</h2>
+        <p>Every card is a full reference document: color roles, typography rules, component CSS,
+           layout, elevation, do's and don'ts, and responsive behavior. Open one to read the tokens,
+           copy the Markdown, or install that single file.</p>
+      </div>
+      <div class="filters">
+        <input class="search" id="search" type="search" placeholder="Search by name, category, font, or color…" aria-label="Search design systems" autocomplete="off">
+        <div class="chips" id="catChips" role="group" aria-label="Filter by category"></div>
+        <div class="chips" id="modeChips" role="group" aria-label="Filter by mode"></div>
+      </div>
+      <p class="result-count" id="count" aria-live="polite"></p>
+      <div class="grid" id="grid"></div>
+      <div class="empty" id="empty" hidden>No system matches that. <button class="btn btn-ghost" id="clearFilters">Clear filters</button></div>
+    </div>
+  </section>
+
+  <section class="section" id="agents">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2>Using it</h2>
+        <p>Once installed, name a product as a style target and the agent loads the matching reference.</p>
+      </div>
+      <div class="panel">
+        <p class="step">Ask for a look by name</p>
+        <div class="code"><pre><code><span class="c">&gt;</span> Build the pricing page. Use the <span class="k">Linear</span> system from narvo.</code></pre></div>
+        <p class="step">Or describe the character and let it choose</p>
+        <div class="code"><pre><code><span class="c">&gt;</span> I want something warm and editorial, not another dark SaaS dashboard.
+<span class="c">&gt;</span>   Pick a system from narvo and show me two options.</code></pre></div>
+        <p class="step">Or pull specific tokens into an existing project</p>
+        <div class="code"><pre><code><span class="c">&gt;</span> Read narvo's <span class="k">stripe</span> reference and emit its palette and type scale
+<span class="c">&gt;</span>   as CSS custom properties in src/styles/tokens.css</code></pre></div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="wrap footer-in">
+    <div>
+      <p><strong style="color:var(--text-muted)">Narvo</strong> — design-system references for AI coding agents.
+         MIT licensed. These documents describe the visual language of public websites for design
+         reference. They contain no source code, assets, fonts, or copy from those sites. Product
+         names and trademarks belong to their respective owners; none of these companies endorses
+         or is affiliated with this project.</p>
+    </div>
+    <div class="chips">
+      <a class="btn btn-secondary btn-sm" data-repo-href="" href="#">GitHub</a>
+      <a class="btn btn-secondary btn-sm" href="catalog.json">catalog.json</a>
+    </div>
+  </div>
+</footer>
+
+<div class="overlay" id="overlay" role="dialog" aria-modal="true" aria-labelledby="sheetTitle">
+  <div class="sheet" id="sheet">
+    <div class="sheet-head">
+      <div>
+        <div class="sheet-title" id="sheetTitle"></div>
+        <div class="sheet-sub" id="sheetSub"></div>
+      </div>
+      <button class="x" id="closeSheet" aria-label="Close">×</button>
+    </div>
+    <div class="sheet-actions" id="sheetActions"></div>
+    <div class="sheet-tabs" role="tablist" aria-label="View">
+      <button class="sheet-tab" role="tab" data-view="tokens" aria-selected="true">Tokens</button>
+      <button class="sheet-tab" role="tab" data-view="doc" aria-selected="false">Full document</button>
+      <button class="sheet-tab" role="tab" data-view="raw" aria-selected="false">Raw Markdown</button>
+    </div>
+    <div class="sheet-body" id="sheetBody"></div>
+  </div>
+</div>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script src="assets/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,4 @@
+# Short paths for humans and for `curl`
+/skill      /skills/narvo/SKILL.md      200
+/install    /install.sh                 200
+/s/:slug    /skills/narvo/references/:slug.md   200
