@@ -109,7 +109,7 @@ for (const f of readdirSync(REF_DIR).filter((f) => f.endsWith(".md")).sort()) {
   }
 
   // tokens = every frontmatter key that isn't catalog metadata
-  const META_KEYS = new Set(["name", "slug", "url", "category", "mode", "fonts", "preview", "summary"]);
+  const META_KEYS = new Set(["name", "slug", "url", "category", "mode", "fonts", "preview", "summary", "coverage"]);
   const tokens = {};
   for (const [k, v] of Object.entries(fm)) if (!META_KEYS.has(k)) tokens[k] = v;
 
@@ -122,6 +122,7 @@ for (const f of readdirSync(REF_DIR).filter((f) => f.endsWith(".md")).sort()) {
     fonts: Array.isArray(fm.fonts) ? fm.fonts : fm.fonts ? [fm.fonts] : [],
     preview: fm.preview,
     summary: fm.summary,
+    coverage: fm.coverage || "full",
     file: `${REF_REL}/${fm.slug}.md`,
     bytes: Buffer.byteLength(text, "utf8"),
     sections: [...body.matchAll(/^## (.+)$/gm)].map((x) => x[1].replace(/^\d+[.)]\s*/, "").trim()),

@@ -12,6 +12,7 @@ preview:
   accent: '#ff5e1f'
 summary: >-
   Orange-on-white infrastructure marketing. FT Kunst Grotesk, flat #f0f0f0 surfaces, and a full dark-mode mirror of the same tokens.
+coverage: partial
 colors:
   primary: '#ff5e1f'
   primary-hover: '#d63c01'
@@ -251,4 +252,32 @@ Ghost buttons are text-only links styled as buttons, used for less prominent act
   font-weight: 400; /* inferred from screenshot */
   padding: 8px 12px; /* inferred from screenshot */
   border: none;
-  border-radius: var(--radius-md,
+  border-radius: var(--radius-md, 6px); /* value from the radius scale above */
+  cursor: pointer;
+}
+```
+
+> The source capture for this system was truncated at this point. The ghost-button
+> rule above is closed using `radius.md` from the token block; no hover, active, or
+> disabled states were captured for it.
+
+## Known Gaps
+
+This reference is **partial**. The token block in the frontmatter is complete —
+colors, typography, spacing, radius, elevation, motion, components and layout are
+all present and usable. The prose, however, was truncated part-way through the
+component section.
+
+Not captured:
+
+- Cards, inputs, forms, navigation, links and badges — only buttons are documented.
+- Layout principles: grid, container width, and section padding beyond what
+  `layout` in the frontmatter records.
+- Depth and elevation guidance beyond the `elevation` tokens.
+- Do's and don'ts.
+- Responsive behavior and breakpoints.
+- The agent prompt guide and quick color reference other files carry.
+
+Build from the frontmatter tokens for anything in that list, and treat the dark-mode
+values (`dark-background`, `dark-surface`, `dark-text-primary`, `dark-border`) as the
+paired theme — Cloudflare runs both.

@@ -115,6 +115,10 @@ Two values worth knowing about:
   extracted from source CSS. Treat them as close, not exact.
 - Some files carry a **Known Gaps** section listing what could not be measured.
   Read it before treating a file as complete.
+- Two files — `cloudflare` and `creatify` — are marked `coverage: partial` in their
+  frontmatter. Their token blocks are complete and usable, but the prose was
+  truncated at the source, so components, layout, and responsive guidance are
+  missing. Build those from the tokens and say what you had to decide yourself.
 
 ## Working from a reference
 

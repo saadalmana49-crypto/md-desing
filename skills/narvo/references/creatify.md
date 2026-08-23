@@ -13,6 +13,7 @@ preview:
   accent: '#573cff'
 summary: >-
   Violet primary on white. General Sans at 80px display with IBM Plex Mono labels.
+coverage: partial
 colors:
   primary: '#573cff'
   accent-blue: '#0088ff'
@@ -128,4 +129,25 @@ Creatify utilizes a focused color palette that balances vibrant accents with a c
     -   **H3**: `'General Sans'` `20px` `500` · line-height `1.2` · tracking `none` · For smaller section titles or component headings.
     -   **Body**: `sans-serif` `16px` `400` · line-height `1.5` · tracking `none` · Standard paragraph text for readability.
     -   **Small**: `sans-serif` `14px` `400` · line-height `1.5` · tracking `none` · For secondary body text or descriptions.
-    -   **Caption**: `sans-serif` `12px` `400` · line-height `1.5` ·
+    -   **Caption**: `sans-serif` `12px` `400` · line-height `1.5` · tracking `none` · For the smallest supporting text.
+
+> The source capture for this system was truncated at this point.
+
+## Known Gaps
+
+This reference is **partial**. The token block in the frontmatter is complete —
+colors, typography, spacing, radius, elevation, motion and components are all
+present and usable. The prose stops after the typography section.
+
+Not captured:
+
+- Component stylings: buttons, cards, inputs, navigation, links and badges. The
+  `components` block in the frontmatter is the only component-level documentation.
+- Layout principles: grid, container width, section padding, whitespace.
+- Depth and elevation guidance beyond the `elevation` tokens.
+- Do's and don'ts.
+- Responsive behavior and breakpoints.
+- The agent prompt guide and quick color reference other files carry.
+
+Note the unusually large radius scale (`sm` 12px through `full` 60px) — it is the
+most distinctive thing the tokens record, and worth honoring even without the prose.

@@ -292,6 +292,7 @@ function card(s) {
     `<p class="card-sum">${esc(s.summary)}</p>` +
     `<div class="card-meta">` +
       `<span class="tagx">${esc(s.mode)}</span>` +
+      (s.coverage === "partial" ? `<span class="tagx partial" title="Tokens complete; prose truncated — see Known Gaps">partial</span>` : "") +
       s.fonts.slice(0, 2).map((f) => `<span class="tagx">${esc(f)}</span>`).join("") +
     `</div>`;
   c.appendChild(body);
@@ -432,6 +433,15 @@ function renderTokens(s) {
   if (!frag.childNodes.length) {
     frag.appendChild(el("p", "empty",
       "This system is documented in prose only — open <strong>Full document</strong> for its values."));
+  }
+
+  if (s.coverage === "partial") {
+    const w = el("div", "tok-group");
+    w.appendChild(el("p", "warn",
+      "<strong>Partial reference.</strong> The tokens above are complete and usable, " +
+      "but the prose document was truncated at the source. See its <em>Known Gaps</em> " +
+      "section in <strong>Full document</strong> for exactly what is missing."));
+    frag.insertBefore(w, frag.firstChild);
   }
 
   const secs = el("div", "tok-group");

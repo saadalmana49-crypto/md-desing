@@ -322,3 +322,12 @@ a:hover { color: var(--primary-hover); }
   * { animation: none !important; transition-duration: 0.01ms !important; }
   html { scroll-behavior: auto; }
 }
+
+/* partial-coverage flag */
+.tagx.partial { color: #ffcf7a; background: rgba(255, 176, 60, 0.14); }
+.warn {
+  font-size: var(--caption); color: var(--text-muted); line-height: 1.6;
+  background: rgba(255, 176, 60, 0.08); border: 1px solid rgba(255, 176, 60, 0.28);
+  border-radius: var(--r-sm); padding: var(--s3) var(--s4);
+}
+.warn strong { color: #ffcf7a; }

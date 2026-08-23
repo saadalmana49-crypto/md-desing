@@ -78,6 +78,11 @@ infer, and it is the part that makes the output read as the real thing.
 
 **Be specific in the don'ts.** "Don't use other radii" beats "maintain consistency."
 
+**Mark incomplete work.** If you can only document part of a system, add
+`coverage: partial` to the frontmatter and a `## Known Gaps` section saying exactly
+what is missing. The site badges those cards and warns in the token view. A partial
+reference that says so is welcome; one that pretends to be complete is not.
+
 **Name typefaces honestly.** Most of these are commercial. Name the real face and
 note a plausible substitute; never imply a font ships with this repository.
 
